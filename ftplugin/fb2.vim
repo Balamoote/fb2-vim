@@ -7,7 +7,7 @@ setlocal formatoptions=
 setlocal listchars=nbsp:~
 setlocal list
 " Валидация FB2 клавишей F9.
-let fbschema=expand("<sfile>:p:h")."/schema/FictionBook2.21.xsd"
+let fbschema=expand("<sfile>:p:h")."/schema/FictionBook.xsd"
 let mkprg="xmllint --nonet --noout --schema "
 let mkprg=mkprg.fbschema." \"%\"\ 2>&1 "
 let mkprg=mkprg."\\| sed s,{http://www.gribuser.ru/xml/fictionbook/2.0},,g"
