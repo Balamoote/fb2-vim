@@ -53,6 +53,7 @@ vmap _e c<emphasis></emphasis><Esc>10hP
 vmap _у _e
 vmap _s c<strong></strong><Esc>8hP
 vmap _ы _s
+vmap _= c<p></p><Esc>3hP
 " Разбивка b64-картинки на строки по 60 символов (_b)
 nmap _b ://s,\c[0-9a-z\/+]\{60\},&,g:noh
 
