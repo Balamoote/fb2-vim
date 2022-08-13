@@ -1,11 +1,12 @@
 # fb2-vim
-Валидатор файлов формата fb2 для редактора vim, оригинал находится тут: https://github.com/IvanAnishchuk/fb2-vim
+<b>Валидатор файлов формата fb2 для редактора vim</b>
+(оригинал находится тут: https://github.com/IvanAnishchuk/fb2-vim)
 
 Внесены минимальные правки:
 - обновлена schema fb2 до актуальной версии из https://github.com/gribuser/fb2
 - подправлены горячие клавиши "под себя"
 
-Установка:
+<b>Установка:</b>
 1. Установить через менеджер плагинов, например, vim-plug из https://github.com/junegunn/vim-plug (инструкции там)
 2. в ~/.vimrc вписать строку
         Plug 'Balamoote/fb2-vim'
