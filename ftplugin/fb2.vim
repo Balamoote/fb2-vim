@@ -10,8 +10,9 @@ setlocal list
 let fbschema=expand("<sfile>:p:h")."/schema/FictionBook.xsd"
 let mkprg="xmllint --nonet --noout --schema "
 let mkprg=mkprg.fbschema." \"%\"\ 2>&1 "
+" Для neovim раскомментировать следующую строку
 " let mkprg=mkprg."\\| sed s,{http://www.gribuser.ru/xml/fictionbook/2.0},,g; "
-" Раскраска отчета
+" Раскраска отчета (только для vim, с neovim не работает)
 let mkprg=mkprg."\\| sed 's={http://www.gribuser.ru/xml/fictionbook/2.0}==g; s=^.* validates=\e[32m&\e[0m=g; s=^.* fails to validate=\e[31m&\e[0m=g'"
 execute "setlocal makeprg=".escape(mkprg, ' "|\')
 set grepprg=grep\ -nH\ $*

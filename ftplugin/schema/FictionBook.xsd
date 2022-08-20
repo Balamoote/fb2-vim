@@ -62,6 +62,7 @@ SUCH DAMAGE.
           <xs:simpleType>
             <xs:restriction base="xs:token">
               <xs:pattern value="notes"/>
+              <xs:pattern value="comments"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:attribute>
@@ -209,7 +210,7 @@ SUCH DAMAGE.
             <xs:documentation>Main content of the book, multiple bodies are used for additional information, like footnotes, that do not appear in the main book flow. The first body is presented to the reader by default, and content in the other bodies should be accessible by hyperlinks. Name attribute should describe the meaning of this body, this is optional for the main body.</xs:documentation>
           </xs:annotation>
         </xs:element>
-        <xs:element name="body" type="notesBodyType" minOccurs="0">
+        <xs:element name="body" type="notesBodyType" minOccurs="0" maxOccurs="unbounded">
           <xs:annotation>
             <xs:documentation>Main content of the book, multiple bodies are used for additional information, like footnotes, that do not appear in the main book flow. The first body is presented to the reader by default, and content in the other bodies should be accessible by hyperlinks. Name attribute should describe the meaning of this body, this is optional for the main body.</xs:documentation>
           </xs:annotation>
